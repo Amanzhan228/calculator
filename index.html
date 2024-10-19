@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groom Price Calculator</title>
+</head>
+<body>
+    <h1>Groom Price Calculator</h1>
+
+    <label for="education">Education:</label>
+    <select id="education">
+        <option value="1.5">Undergraduate degree</option>
+        <option value="1.2">College degree</option>
+        <option value="1.05">High school degree</option>
+        <option value="0.9">Middle school degree</option>
+    </select><br><br>
+ 
+    <label for="netWorth">Family Net Worth:</label>
+    <select id="netWorth">
+        <option value="2">More than 10,000$</option>
+        <option value="1.5">Between 5,000$ and 10,000$</option>
+        <option value="1.2">Less than 5,000$</option>
+    </select><br><br>
+
+    <label for="caste">Caste:</label>
+    <select id="caste">
+        <option value="100">Brahmin </option>
+        <option value="50">Kshatriya</option>
+        <option value="20">Vaishya</option>
+        <option value="10">Shudra</option>
+        <option value="-50">Varna - untouchable</option>
+    </select><br><br>
+
+    <label>Skills:</label><br>
+    <input type="checkbox" id="instrument" value="10"> Plays a musical instrument<br>
+    <input type="checkbox" id="cook" value="20"> Good cook<br>
+    <input type="checkbox" id="easygoing" value="15"> Easygoing character<br>
+    <input type="checkbox" id="sing" value="10"> Sings well<br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="radio" name="age" value="1.5" checked> 18-23<br>
+    <input type="radio" name="age" value="1.2"> 24-27<br>
+    <input type="radio" name="age" value="0.95"> 28+<br><br>
+ 
+    <label>Reputation:</label><br>
+    <input type="checkbox" id="parentsGossip" value="0.85"> Gossips about parents<br>
+    <input type="checkbox" id="characterGossip" value="0.9"> Gossips about character<br>
+    <input type="checkbox" id="generalGossip" value="-20"> General gossip<br><br>
+ 
+    <button onclick="calculatePrice()">Calculate Price</button>
+
+    <div>Price:<span id="price">100</span>$</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
